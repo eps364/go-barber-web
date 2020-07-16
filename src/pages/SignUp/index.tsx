@@ -50,7 +50,7 @@ const SignUp: React.FC = () => {
         <FiArrowLeft />
         Voltar para Logon</a>
     </Content>
-  </ Container>
+    </ Container>
   )
 }
 
