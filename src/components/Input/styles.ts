@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-
+/* eslint-disable import/extensions */
 import Tooltip from '../Tolltip';
 
 interface ContainerProps {
