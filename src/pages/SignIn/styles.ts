@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 import signInBackgroudImg from '../../assets/sign-in-background.png';
 
-
 export const Container = styled.div`
   height: 100vh;
   display: flex;
@@ -38,10 +37,11 @@ export const Content = styled.div`
       margin-top: 16px;
       transition: background-color 0.2s;
 
-      &::hover {
+      &:hover {
         background: ${shade(0.2, '#ff9000')};
       }
     }
+    
     a {
       color: #F4EDE8;
       display: block;
