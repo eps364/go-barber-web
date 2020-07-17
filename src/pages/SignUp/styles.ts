@@ -35,7 +35,7 @@ export const Content = styled.div`
   max-width: 700px;
 
   
-  > a {
+  a {
     color: #F4EDE8;
     display: block;
     margin-top: 24px;

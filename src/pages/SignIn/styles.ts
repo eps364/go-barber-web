@@ -35,7 +35,7 @@ export const Content = styled.div`
   max-width: 700px;
 
   
-  > a {
+  a {
     color: #F4EDE8;
     display: block;
     margin-top: 24px;
@@ -46,6 +46,7 @@ export const Content = styled.div`
 
     &:hover{
       color: ${shade(0.2, '#F4EDE8')}
+    }
   }
 `;
 
