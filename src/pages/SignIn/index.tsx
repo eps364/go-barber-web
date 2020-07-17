@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useContext} from 'react'
+import React, { useRef, useCallback} from 'react'
 import logoImg from '../../assets/logo.svg'
 import { FiLogIn, FiMail, FiLock } from 'react-icons/fi'
 import {Container, Content, Background} from './styles'
@@ -6,7 +6,7 @@ import * as Yup from 'yup'
 import { FormHandles } from '@unform/core'
 import { Form } from '@unform/web'
 
-import { AuthContext } from '../../context/AuthContext'
+import { useAuth } from '../../hooks/AuthContext'
 import getValidationErrors from '../../util/getValidationErrors'
 
 import Input from '../../components/Input'
@@ -20,7 +20,7 @@ interface SifnInFormData{
 
 const SigIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
-  const { signIn } = useContext(AuthContext)
+  const { signIn } = useAuth();
 
   const handleSubmit = useCallback( async (data: SifnInFormData) => {
     try {
